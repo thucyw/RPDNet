@@ -1,6 +1,5 @@
 # RDNet
-
-RDNet is the model that can detect real targets from RDM. For detail, see our [paper]().
+RDNet is the model that can detect valid cells from millimeter wave radar RDM.
 
 ## Prerequisites
 
@@ -20,7 +19,7 @@ RDNet is the model that can detect real targets from RDM. For detail, see our [p
 Noted that our code is tested based on [PyTorch 1.8](http://pytorch.org/)
 
 ### Dataset
-Download [Dataset]().
+Download [Dataset](https://drive.google.com/drive/folders/1CmsakGqcIU0Ek0m_kca6MDEaOnAS1RF4?usp=sharing).
 
 Before training or test, please make sure you have prepared the dataset
 by organizing the directory as:
@@ -67,4 +66,3 @@ python main.py transform
 
 ## License
 RDNetis freely available for free non-commercial use, and may be redistributed under these conditions.
-For commercial queries, contact [xxx]().
