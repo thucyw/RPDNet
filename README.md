@@ -1,5 +1,5 @@
-# RDNet
-RDNet is the model that can detect valid cells from millimeter wave radar RDM.
+# RPDNet
+RPDNet is the model that can detect valid cells from millimeter wave radar RDM.
 
 ## Prerequisites
 
