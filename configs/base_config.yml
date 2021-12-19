@@ -1,0 +1,16 @@
+WORK_PATH: "./checkpoint"
+CUDA_VISIBLE_DEVICES: "0"
+
+learning_rate: 0.0005
+GAN: False
+d_iter: 5
+weight_cliping_limit: 0.01
+
+restore: False
+restore_epoch: 260
+
+batch_size: 16
+
+data:
+    train: ["GT1","4-GT4","GT5-9","GT6-3"]
+    test: ["GT6-2"]
