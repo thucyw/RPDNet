@@ -9,7 +9,7 @@ import re
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('act',
-                        choices=["train","transform"],
+                        choices=["train", "transform", "eval"],
                         default="train", type=str)
     parser.add_argument('--config',
                         help='configuration filename',

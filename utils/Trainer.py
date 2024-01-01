@@ -133,6 +133,10 @@ class Trainer(object):
 
 
     def eval(self, rate = 0.5):
+        # load training data and testing data
+        train_data, test_data = init_dataset(self.config)
+        self.train_loader = torch.utils.data.DataLoader(dataset = train_data, batch_size = self.config.batch_size, shuffle = True)
+        self.test_loader = torch.utils.data.DataLoader(dataset = test_data, batch_size = 1)
 
         self.model.eval()
         Precision = list()
