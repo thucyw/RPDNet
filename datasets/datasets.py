@@ -26,7 +26,7 @@ def load_data(datapath, labelpath = None):
 
 def init_dataset(config):
 
-    if config.act == "train":
+    if config.act == "train" or config.act == "eval":
 
         D, L = [], []
         for i in config.data.train:
@@ -49,12 +49,12 @@ def init_dataset(config):
 
     if config.act == "transform":
 
-        transform_dataset = []
+        transform_datasets = []
         for i in config.data.transform:
             data = load_data("data/{}/data/".format(i))
-            transform_dataset += myDataset(data)
+            transform_datasets += myDataset([data], [])
 
-        return transform_dataset
+        return transform_datasets
 
 
 class myDataset(Dataset):
